@@ -1,2 +1,7 @@
 # Diagrams-Docker
-Diagramsを使うためのDocker環境
+Building a Docker environment to use Diagrams.
+
+## Generate images
+```
+docker-compose run --rm diagram
+```
