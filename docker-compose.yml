@@ -1,0 +1,12 @@
+version: "3"
+services:
+  diagram:
+    build: .
+    image: python/diagrams
+    # ports: 
+    #   - 5000:5000
+    working_dir: /tmp
+    volumes:
+      - ./tmp:/tmp
+    command:
+      "python diagram.py"
