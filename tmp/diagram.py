@@ -5,8 +5,8 @@ from diagrams.gcp.database import SQL
 from diagrams.onprem.vcs import Github
 from diagrams.onprem.client import Client, User
 
-with Diagram("Test", show=False):
-    with Cluster("Google Cloud Platform"):
+with Diagram("Architecture", show=False):
+    with Cluster("Apps"):
         with Cluster("CI/CD"):
             dev = GSR("source mirror")
             cicd = dev >> Build("build") >> GCR("container deploy")
