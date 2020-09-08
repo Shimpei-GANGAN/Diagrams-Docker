@@ -1,0 +1,11 @@
+version: "3"
+services:
+  diagrams:
+    build: .
+    image: diagrams:dev
+    container_name: diagrams-dev
+    tty: true
+    volumes:
+      - ../../diagrams:/diagrams
+      - .:/home
+    working_dir: /diagrams
